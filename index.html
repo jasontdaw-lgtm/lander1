@@ -6,117 +6,115 @@
 <title>Walmart Rewards</title>
 
 <style>
-  * { box-sizing: border-box; }
+* { box-sizing: border-box; }
 
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-  }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
 
+.wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px 16px 110px;
+}
+
+/* IMAGE */
+.logo {
+  width: 130px;
+  margin: 15px auto 10px;
+  display: block;
+}
+
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;
+  margin: 20px 0 25px;
+}
+
+.step {
+  border: 1px solid #e1e1e1;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.step span {
+  font-weight: 800;
+}
+
+/* MOBILE CTA */
+.cta-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 14px 16px 18px;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+}
+
+.cta {
+  width: 100%;
+  height: 56px;
+  background: #0071dc;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.note {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 8px;
+}
+
+/* DESKTOP FIX */
+@media (min-width: 768px) {
   .wrapper {
-    max-width: 420px;
-    margin: 0 auto;
-    background: #fff;
-    min-height: 100vh;
-    padding: 20px 16px 110px;
-  }
-
-  .logo {
-    width: 130px;
-    margin: 15px auto 10px;
-    display: block;
-  }
-
-  h1 {
-    text-align: center;
-    font-size: 26px;
-    font-weight: 800;
-    margin: 20px 0 25px;
-  }
-
-  .step {
-    background: #ffffff;
-    border: 1px solid #e1e1e1;
-    border-radius: 14px;
-    padding: 14px 16px;
-    margin-bottom: 14px;
-    font-size: 16px;
-    font-weight: 600;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-  }
-
-  .step span {
-    font-weight: 800;
+    padding-bottom: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
   }
 
   .cta-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    padding: 14px 16px 18px;
-    box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+    position: static;
+    box-shadow: none;
+    margin-top: 24px;
   }
-
-  .cta {
-    width: 100%;
-    height: 56px;
-    background: #0071dc;
-    color: #fff;
-    border: none;
-    border-radius: 14px;
-    font-size: 20px;
-    font-weight: 800;
-    cursor: pointer;
-  }
-
-  .cta:active {
-    transform: scale(0.98);
-  }
-
-  .note {
-    text-align: center;
-    font-size: 12px;
-    color: #777;
-    margin-top: 8px;
-  }
-
-  @media (min-width: 768px) {
-    .wrapper {
-      margin-top: 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-    }
-
-    .cta-bar {
-      position: static;
-      box-shadow: none;
-      padding: 0;
-      margin-top: 30px;
-    }
-  }
+}
 </style>
 </head>
 
 <body>
 
 <div class="wrapper">
-  <img src="https://ibb.co/k2vb3Skb" class="logo" alt="Walmart">
+  <!-- 🔥 REPLACE WITH DIRECT IMAGE LINK -->
+  <img src="https://i.ibb.co/v4Rysjgy/WMT-1.png" class="logo" alt="Walmart">
 
   <h1>Five Simple Steps…</h1>
 
   <div class="step"><span>1.</span> Click “Get Started” below 👇</div>
   <div class="step"><span>2.</span> Answer a few quick questions 📝</div>
   <div class="step"><span>3.</span> Enter your email and details</div>
-  <div class="step"><span>4.</span> Complete 3–5 deals💰</div>
+  <div class="step"><span>4.</span> Complete 3–5 deals 💰</div>
   <div class="step"><span>5.</span> Receive your $700 reward 🎁</div>
-</div>
 
-<div class="cta-bar">
-  <button class="cta" onclick="go()">Get Started</button>
-  <div class="note">Limited availability • While supplies last</div>
+  <!-- DESKTOP BUTTON -->
+  <div class="cta-bar">
+    <button class="cta" onclick="go()">Get Started</button>
+    <div class="note">Limited availability • While supplies last</div>
+  </div>
 </div>
 
 <script>
